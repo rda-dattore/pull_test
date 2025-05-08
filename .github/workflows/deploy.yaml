@@ -13,7 +13,7 @@ jobs:
           ref: main
       - name: update
         run: |
-          echo `date` >! x
+          echo `date` > x
           cat x
       - name: commit
         run: |
