@@ -12,7 +12,9 @@ jobs:
         with:
           ref: main
       - name: update
-        run: echo `date` >! x
+        run: |
+          echo `date` >! x
+          cat x
       - name: commit
         run: |
           git config user.email "${{ secrets.GIT_CONFIG_USER_EMAIL }}"
