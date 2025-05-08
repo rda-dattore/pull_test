@@ -1,0 +1,9 @@
+on:
+  push:
+    paths:
+      - "y/**"
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
