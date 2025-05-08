@@ -14,7 +14,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: deploy
           ssh-key: ${{ secrets.ACTION_PUSH_KEY }}
       - name: update
         run: |
