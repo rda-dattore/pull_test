@@ -7,3 +7,7 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
